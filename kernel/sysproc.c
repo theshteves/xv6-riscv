@@ -22,6 +22,12 @@ sys_getpid(void)
 }
 
 uint64
+sys_getreadcount(void)
+{
+  return mycpu()->readcount;
+}
+
+uint64
 sys_fork(void)
 {
   return fork();
