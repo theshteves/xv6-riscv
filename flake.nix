@@ -8,7 +8,7 @@
   in {
       devShells.${system}.default = pkgs.mkShell {
           packages = with pkgs; [
-            nixpkgs.legacyPackages.${system}.coreboot-toolchain.riscv
+            coreboot-toolchain.riscv
             libgcc
             qemu
             perl
