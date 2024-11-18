@@ -10,4 +10,6 @@ typedef unsigned long uint64;
 typedef uint64 pde_t;
 
 typedef uint64 size_t;
+#ifndef NULL
 #define NULL ((void*)0)
+#endif
